@@ -102,15 +102,14 @@ import BuildspaceVideo from '../assets/vid1.mp4';
 // };
 
 // export default Business;
+
 export default function Business() {
   const videoRef = useRef(null);
-  const canvasRef = useRef(null);
-  const [capturedFrames, setCapturedFrames] = useState([]);
 
   useEffect(() => {
     const getUserMedia = async () => {
       try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        const stream = await navigator.mediaDevices.getUserMedia({video: true});
         videoRef.current.srcObject = stream;
       } catch (err) {
         console.log(err);
@@ -119,47 +118,12 @@ export default function Business() {
     getUserMedia();
   }, []);
 
-  const captureFrame = () => {
-    if (videoRef.current && canvasRef.current) {
-      const context = canvasRef.current.getContext('2d');
-      context.drawImage(videoRef.current, 0, 0, canvasRef.current.width, canvasRef.current.height);
-      const frameData = canvasRef.current.toDataURL('image/png');
-      setCapturedFrames((prevFrames) => [...prevFrames, frameData]);
-    }
-  };
-
-  const sendFramesToBackend = async () => {
-    try {
-      for (let i = 0; i < capturedFrames.length; i++) {
-        const response = await fetch('http://localhost:3001/api/save-frame', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ frame: capturedFrames[i], index: i }),
-        });
-        if (!response.ok) {
-          throw new Error('Failed to save frame');
-        }
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    if (capturedFrames.length < 200) {
-      const intervalId = setInterval(captureFrame, 100); // Capture a frame every 100ms
-      return () => clearInterval(intervalId);
-    } else {
-      sendFramesToBackend();
-    }
-  }, [capturedFrames]);
-
   return (
     <div>
-      <video ref={videoRef} autoPlay width="640" height="480" />
-      <canvas ref={canvasRef} width="640" height="480" style={{ display: 'none' }} />
+      <video 
+        ref={videoRef}
+        autoPlay
+      />
     </div>
   );
 }
