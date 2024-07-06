@@ -1,7 +1,6 @@
 // import { features } from "../constants";
-import React, { useState,useEffect,useRef } from 'react';
-import BuildspaceVideo from '../assets/vid1.mp4';
-
+import React, { useState, useEffect, useRef } from "react";
+import BuildspaceVideo from "../assets/vid1.mp4";
 
 // const Business = () => {
 //   const [videoSrc, setVideoSrc] = useState('');
@@ -37,14 +36,14 @@ import BuildspaceVideo from '../assets/vid1.mp4';
 //             Click a button to play a video
 //           </div>
 //           <div className="button-container flex justify-center mt-4">
-//             <button 
-//               onClick={handleLiveVideoClick} 
+//             <button
+//               onClick={handleLiveVideoClick}
 //               className="bg-blue-500 text-white px-4 py-2 m-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
 //             >
 //               Play Live Video
 //             </button>
-//             <button 
-//               onClick={handleRecordedVideoClick} 
+//             <button
+//               onClick={handleRecordedVideoClick}
 //               className="bg-green-500 text-white px-4 py-2 m-2 rounded hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500"
 //             >
 //               Play Recorded Video
@@ -120,7 +119,7 @@ import BuildspaceVideo from '../assets/vid1.mp4';
 
 //   return (
 //     <div>
-//       <video 
+//       <video
 //         ref={videoRef}
 //         autoPlay
 //       />
@@ -128,47 +127,84 @@ import BuildspaceVideo from '../assets/vid1.mp4';
 //   );
 // }
 
-
-
 const Business = () => {
-
   return (
     <section id="demo">
       <div className="flex flex-col items-center justify-center bg-primary p-4">
-        <h1 className="text-4xl font-semibold text-white mt-24 mb-32 text-center">What we do, and how it works</h1>
+        <h1 className="text-4xl font-semibold text-white mt-12 mb-16 text-center">
+          What we do, and how it works
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl">
           {/* Idea */}
-          <div
-            className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white"
-          >
-            <h2 className="text-2xl font-semibold text-white">Our idea</h2>
-            <p className="text-white mt-4 text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, dolores itaque at nam, cum deleniti ad pariatur laborum architecto dolor earum magnam molestiae neque omnis quasi adipisci est perspiciatis consequatur exercitationem nemo non eligendi! Libero corporis dicta recusandae similique perferendis tempore quam inventore? Dolorum natus voluptas obcaecati excepturi, minus dolor?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, unde?
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
+            <h2 className="text-2xl font-semibold text-white">Plan</h2>
+            <p className="text-white mt-6 text-center">
+              We are developing an advanced surveillance system that uses AI for
+              motion and facial recognition. Key features include:
+            </p>
+            <p className="text-white mt-3 text-center">
+              Automatic Flagging: Faces are categorized as Green (trusted),
+              Orange (regular visitors), or Red (strangers) based on visit
+              frequency.
+            </p>
+            <p className="text-white mt-3 text-center">
+              Manual Adjustment: Users can manually set flags for individuals.
+            </p>
+            <p className="text-white mt-3 text-center">
+              Motion Detection: Prolonged motion without facial recognition (eg.
+              use of masks) is flagged as suspicious.
+            </p>
+            <p className="text-white mt-3 text-center">
+              Instant Alerts: Suspicious activity triggers immediate alerts.
+            </p>
+            <p className="text-white mt-3 text-center">
+              Visitor Statistics: A dashboard provides visitor data with weekly
+              and monthly summaries.
             </p>
           </div>
+
+
           {/* Video */}
-          <div
-            className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white"
-          >
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
             <h2 className="text-2xl font-semibold text-white">Example</h2>
-            <p className="text-white mt-4 text-center">
-              Hi, I'm Michelle! I love working with AI and want to build interesting stuff with it!
+            <p className="text-white mt-6 text-center">
+              Hi, I'm Michelle! I love working with AI and want to build
+              interesting stuff with it!
             </p>
           </div>
+
+
           {/* App */}
-          <div
-            className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white"
-          >
-            <h2 className="text-2xl font-semibold text-white">Why a waitlist?</h2>
-            <p className="text-white mt-4 text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, dolores itaque at nam, cum deleniti ad pariatur laborum architecto dolor earum magnam molestiae neque omnis quasi adipisci est perspiciatis consequatur exercitationem nemo non eligendi! Libero corporis dicta recusandae similique perferendis tempore quam inventore? Dolorum natus voluptas obcaecati excepturi, minus dolor?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, unde?
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
+            <h2 className="text-2xl font-semibold text-white">
+              Why a waitlist?
+            </h2>
+            <p className="text-white mt-6 text-center">
+              Your privacy and security is our top priority
+            </p>
+            <p className="text-white mt-3 text-center">
+              To accurately recognize a face as a green flag, our model needs
+              detailed data. This requires capturing several hundred frames of
+              your face in a 10-second video. While essential for model
+              accuracy, we understand this might be uncomfortable, especially in
+              our early development stage.
+            </p>
+            <p className="text-white mt-3 text-center">
+              To address this, we are developing an app that you can download.
+              You'll record your face using the app, and all data will remain on
+              your device. The model will then train on this data locally,
+              ensuring accurate recognition without sharing your information
+              with us.
+            </p>
+            <p className="text-white mt-3 text-center">
+              If interested, please join our waitlist for early access to the
+              app upon release.
             </p>
           </div>
         </div>
       </div>
     </section>
   );
-
-}
+};
 
 export default Business;
