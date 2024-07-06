@@ -21,17 +21,17 @@ const App = () => (
     
     <div className={`bg-primary ${styles.paddingPageX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
+      <div className="app-container">
+          <div className="app-container flex flex-col items-center justify-center min-h-screen">
+            {/* Video options box */}
+            <div className="camera-container flex justify-center items-center">
+              <Business />
+            </div>
+            {/* <Button styles="mt-10" /> */}
+          </div>
+          {/* <Button styles="mt-10" /> */}
+        </div>
         <AboutUs/>
-        <div className="app-container">
-        <div className="app-container flex flex-col items-center justify-center min-h-screen">
-      {/* Video options box */}
-      <div className="camera-container flex justify-center items-center">
-        <Business />
-      </div>
-      {/* <Button styles="mt-10" /> */}
-      </div>
-      {/* <Button styles="mt-10" /> */}
-    </div>
         <Footer />
       </div>
     </div>
