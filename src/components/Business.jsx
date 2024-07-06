@@ -103,27 +103,72 @@ import BuildspaceVideo from '../assets/vid1.mp4';
 
 // export default Business;
 
-export default function Business() {
-  const videoRef = useRef(null);
+// export default function Business() {
+//   const videoRef = useRef(null);
 
-  useEffect(() => {
-    const getUserMedia = async () => {
-      try {
-        const stream = await navigator.mediaDevices.getUserMedia({video: true});
-        videoRef.current.srcObject = stream;
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    getUserMedia();
-  }, []);
+//   useEffect(() => {
+//     const getUserMedia = async () => {
+//       try {
+//         const stream = await navigator.mediaDevices.getUserMedia({video: true});
+//         videoRef.current.srcObject = stream;
+//       } catch (err) {
+//         console.log(err);
+//       }
+//     };
+//     getUserMedia();
+//   }, []);
+
+//   return (
+//     <div>
+//       <video 
+//         ref={videoRef}
+//         autoPlay
+//       />
+//     </div>
+//   );
+// }
+
+
+
+const Business = () => {
 
   return (
-    <div>
-      <video 
-        ref={videoRef}
-        autoPlay
-      />
-    </div>
+    <section id="demo">
+      <div className="flex flex-col items-center justify-center bg-primary p-4">
+        <h1 className="text-4xl font-semibold text-white mt-24 mb-32 text-center">What we do, and how it works</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl">
+          {/* Idea */}
+          <div
+            className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white"
+          >
+            <h2 className="text-2xl font-semibold text-white">Our idea</h2>
+            <p className="text-white mt-4 text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, dolores itaque at nam, cum deleniti ad pariatur laborum architecto dolor earum magnam molestiae neque omnis quasi adipisci est perspiciatis consequatur exercitationem nemo non eligendi! Libero corporis dicta recusandae similique perferendis tempore quam inventore? Dolorum natus voluptas obcaecati excepturi, minus dolor?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, unde?
+            </p>
+          </div>
+          {/* Video */}
+          <div
+            className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white"
+          >
+            <h2 className="text-2xl font-semibold text-white">Example</h2>
+            <p className="text-white mt-4 text-center">
+              Hi, I'm Michelle! I love working with AI and want to build interesting stuff with it!
+            </p>
+          </div>
+          {/* App */}
+          <div
+            className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white"
+          >
+            <h2 className="text-2xl font-semibold text-white">Why a waitlist?</h2>
+            <p className="text-white mt-4 text-center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, dolores itaque at nam, cum deleniti ad pariatur laborum architecto dolor earum magnam molestiae neque omnis quasi adipisci est perspiciatis consequatur exercitationem nemo non eligendi! Libero corporis dicta recusandae similique perferendis tempore quam inventore? Dolorum natus voluptas obcaecati excepturi, minus dolor?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, unde?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
+
 }
+
+export default Business;

@@ -49,7 +49,7 @@ const AboutUs = () => {
   return (
     <section id="about">
       <div className="flex flex-col items-center justify-center bg-primary p-4">
-        <h1 className="text-6xl font-semibold text-white mt-20 mb-32">This is us</h1>
+        <h1 className="text-5xl font-semibold text-white mt-24 mb-32">This is us</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
           {/* Person 1 */}
           <div
@@ -61,7 +61,7 @@ const AboutUs = () => {
               className="w-24 h-24 object-cover rounded-full mb-4"
             />
             <h2 className="text-2xl font-semibold text-white">Kunal Umbrani</h2>
-            <p className="text-white mt-2 text-center">
+            <p className="text-white mt-4 text-center">
               Hey! I'm Kunal, a recent computer science graduate. I'm excited to be working on buildspace and work on cool stuff!
             </p>
             <p className="text-white mt-4 text-center">  
@@ -78,7 +78,7 @@ const AboutUs = () => {
               className="w-24 h-24 object-cover rounded-full mb-4"
             />
             <h2 className="text-2xl font-semibold text-white">Michelle Dsouza</h2>
-            <p className="text-white mt-2 text-center">
+            <p className="text-white mt-4 text-center">
               Hi, I'm Michelle! I love working with AI and want to build interesting stuff with it!
             </p>  
             <p className="text-white mt-4 text-center">  
