@@ -25,3 +25,6 @@ const FeedbackCard = ({ content, name, title, img }) => (
 
 
 export default FeedbackCard;
+
+
+hello
