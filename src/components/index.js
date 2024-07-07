@@ -7,5 +7,5 @@ export {
   Navbar,
   Business,
   Footer,
-  Hero
+  Hero,
 };

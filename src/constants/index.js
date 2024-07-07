@@ -17,6 +17,7 @@ export const navLinks = [
     id: "contact",
     title: "Contact us",
   }
+
 ];
 
 // export const features = [
