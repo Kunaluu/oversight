@@ -9,7 +9,7 @@ const Hero = () => {
     >
       {/* Left Column: Text */}
       <div className="flex-1 flex flex-col items-start text-left">
-        <h1 className="font-poppins font-semibold text-[30px] md:text-[40px] lg:text-[115px] leading-tight max-w-[800px]">
+        <h1 className="text-gradient font-poppins font-semibold text-[30px] md:text-[40px] lg:text-[115px] leading-tight max-w-[800px]">
           OVERSIGHT
         </h1>
         <p className="text-[16px] md:text-[18px] lg:text-[30px] text-gray-300 mt-10 max-w-[550px]">

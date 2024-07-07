@@ -163,16 +163,29 @@ const Business = () => {
             </p>
           </div>
 
-
-          {/* Video */}
+          {/* Example */}
           <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
-            <h2 className="text-3xl font-semibold text-white">Example</h2>
+            <h2 className="text-3xl font-semibold text-white">Demo</h2>
             <p className="text-white mt-6 text-center">
-              Hi, I'm Michelle! I love working with AI and want to build
-              interesting stuff with it!
+              Check out our face recognition model: the first demo runs in
+              real-time, while the second one processes a prerecorded video.
             </p>
+            <div
+              className="relative mt-6 w-full"
+              style={{ paddingBottom: "95%" }}
+            >
+              <video
+                className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                controls
+                controlsList="nodownload noremoteplayback noplaybackrate nofullscreen"
+                disablePictureInPicture
+                poster="src/assets/thumbnail.png" // Thumbnail image
+              >
+                <source src="src/assets/vid1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
-
 
           {/* App */}
           <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
