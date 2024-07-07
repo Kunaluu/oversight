@@ -1,6 +1,6 @@
   import mongoose from 'mongoose';
 
-  const MONGODB_URI = 'mongodb+srv://workoversight:VxyxwowHmMoHCN1i@formdata.cnqjvxq.mongodb.net/?retryWrites=true&w=majority&appName=Formdata';
+  const MONGODB_URI = 'mongodb+srv://workoversight:Uz1j9xkE9DYZgfrS@formdata.cnqjvxq.mongodb.net/?retryWrites=true&w=majority&appName=Formdata';
 
   const FormDataSchema = new mongoose.Schema({
     name: { type: String, required: true },
