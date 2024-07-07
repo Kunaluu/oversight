@@ -1,5 +1,6 @@
   import mongoose from 'mongoose';
   import cors from 'cors';
+  import express from 'express';
 
   // Initialize Express app
   const app = express();
