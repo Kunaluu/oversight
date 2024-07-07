@@ -181,7 +181,7 @@ const Business = () => {
                 disablePictureInPicture
                 poster="src/assets/thumbnail.png" // Thumbnail image
               >
-                <source src="src/assets/vid1.mp4" type="video/mp4" />
+                <source src="/src/assets/vid1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
