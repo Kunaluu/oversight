@@ -178,7 +178,7 @@ const Business = () => {
                 controls
                 controlsList="nodownload noremoteplayback noplaybackrate nofullscreen"
                 disablePictureInPicture
-                poster="src/assets/thumbnail.png" // Thumbnail image
+                poster="/thumbnail.png" // Thumbnail image
               >
                 <source src="/vid1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
