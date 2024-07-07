@@ -1,0 +1,7 @@
+{
+    "functions": {
+      "submit-form": {
+        "maxDuration": 30
+      }
+    }
+  }
