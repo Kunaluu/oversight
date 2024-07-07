@@ -1,9 +1,7 @@
 import mongoose from 'mongoose';
 
-// Replace with your MongoDB connection string
 const MONGODB_URI = 'mongodb+srv://workoversight:VxyxwowHmMoHCN1i@formdata.cnqjvxq.mongodb.net/?retryWrites=true&w=majority&appName=Formdata';
 
-// Define a Mongoose schema
 const FormDataSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
@@ -16,11 +14,9 @@ async function connectToDatabase() {
   if (FormModel) return;
 
   try {
-    await mongoose.connect(MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(MONGODB_URI);
     FormModel = mongoose.model('FormData', FormDataSchema);
+    console.log('Connected to MongoDB');
   } catch (error) {
     console.error('Failed to connect to MongoDB', error);
     throw error;
@@ -34,7 +30,6 @@ export default async function handler(req, res) {
     try {
       await connectToDatabase();
 
-      // Create a new record in MongoDB
       const formData = new FormModel({ name, email });
       await formData.save();
 
