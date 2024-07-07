@@ -137,7 +137,7 @@ const Business = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl">
           {/* Idea */}
           <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
-            <h2 className="text-2xl font-semibold text-white">Plan</h2>
+            <h2 className="text-3xl font-semibold text-white">Plan</h2>
             <p className="text-white mt-6 text-center">
               We are developing an advanced surveillance system that uses AI for
               motion and facial recognition. Key features include:
@@ -166,7 +166,7 @@ const Business = () => {
 
           {/* Video */}
           <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
-            <h2 className="text-2xl font-semibold text-white">Example</h2>
+            <h2 className="text-3xl font-semibold text-white">Example</h2>
             <p className="text-white mt-6 text-center">
               Hi, I'm Michelle! I love working with AI and want to build
               interesting stuff with it!
@@ -176,7 +176,7 @@ const Business = () => {
 
           {/* App */}
           <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
-            <h2 className="text-2xl font-semibold text-white">
+            <h2 className="text-3xl font-semibold text-white">
               Why a waitlist?
             </h2>
             <p className="text-white mt-6 text-center">

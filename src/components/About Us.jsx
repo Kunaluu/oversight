@@ -40,7 +40,6 @@
 
 // export default AboutUs;
 
-
 import React from "react";
 import person1Image from "../assets/kunal.jpg";
 import person2Image from "../assets/michelle.jpg";
@@ -49,40 +48,46 @@ const AboutUs = () => {
   return (
     <section id="about">
       <div className="flex flex-col items-center justify-center bg-primary p-4">
-        <h1 className="text-5xl font-semibold text-white mt-24 mb-32">This is us</h1>
+        <h1 className="text-5xl font-semibold text-white mt-16 mb-20">
+          This is us
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
           {/* Person 1 */}
-          <div
-            className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white"
-          >
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
             <img
               src={person1Image}
               alt="Kunal Umbrani"
-              className="w-24 h-24 object-cover rounded-full mb-4"
+              className="w-60 h-48 object-cover rounded-full mb-4"
             />
-            <h2 className="text-2xl font-semibold text-white">Kunal Umbrani</h2>
-            <p className="text-white mt-4 text-center">
-              Hey! I'm Kunal, a recent computer science graduate. I'm excited to be working on buildspace and work on cool stuff!
-            </p>
-            <p className="text-white mt-4 text-center">  
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus nisi quasi illum dolorem accusantium eveniet sunt velit error nam, soluta assumenda omnis ullam architecto iure dignissimos.
+            <h2 className="text-3xl font-semibold text-white mt-4">
+              Kunal Umbrani
+            </h2>
+            <p className="text-white mt-3 text-center">
+              Hey, I'm Kunal, a Computer Science graduate with a profound
+              fascination for the potential of Machine Learning and Generative
+              AI. Every new project and discovery drives me to delve deeper into
+              the development of these fields. I am equally passionate about
+              Game Development, where I blend my expertise with creative design
+              to build captivating and engaging experiences.
             </p>
           </div>
           {/* Person 2 */}
-          <div
-            className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white"
-          >
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
             <img
               src={person2Image}
               alt="Michelle Dsouza"
-              className="w-24 h-24 object-cover rounded-full mb-4"
+              className="w-60 h-48 object-cover rounded-full mb-4"
             />
-            <h2 className="text-2xl font-semibold text-white">Michelle Dsouza</h2>
-            <p className="text-white mt-4 text-center">
-              Hi, I'm Michelle! I love working with AI and want to build interesting stuff with it!
-            </p>  
-            <p className="text-white mt-4 text-center">  
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus nisi quasi illum dolorem accusantium eveniet sunt velit error nam, soluta assumenda omnis ullam architecto iure dignissimos. Suscipit quod fugit aspernatur. Nesciunt ratione quia inventore?
+            <h2 className="text-3xl font-semibold text-white mt-4">
+              Michelle Dsouza
+            </h2>
+            <p className="text-white mt-3 text-center">
+              Hi, I'm Michelle. I'm a Computer Science graduate immersed in
+              Artificial Intelligence and 3D Animation. My focus lies on
+              leveraging automation and AI to build innovative approaches. I
+              thrive on crafting compelling narratives through visual
+              storytelling, seamlessly merging imagination with technology, and
+              bringing dynamic worlds to life.
             </p>
           </div>
         </div>
@@ -92,4 +97,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-
