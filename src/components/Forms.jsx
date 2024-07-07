@@ -80,7 +80,7 @@ const Forms = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email }),
+        body: JSON.stringify({ name, email }),  
       });
 
       if (response.ok) {

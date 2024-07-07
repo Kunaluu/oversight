@@ -1,4 +1,7 @@
   import mongoose from 'mongoose';
+  const cors = require('cors');
+  const app = express();
+  app.use(cors());
 
   const MONGODB_URI = 'mongodb+srv://workoversight:Uz1j9xkE9DYZgfrS@formdata.cnqjvxq.mongodb.net/?retryWrites=true&w=majority&appName=Formdata';
 
