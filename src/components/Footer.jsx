@@ -3,14 +3,10 @@ import logo from "../assets/oversight_logos/logo_transparent.png";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
-  <section id='contact' className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+  <section id="contact" className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
-        <img
-          src={logo}
-          alt="oversight"
-          className="w-[120px] h-[120px] object-contain"
-        />
+        <img src={logo} alt="oversight" className="w-[120px] h-[120px] object-contain" />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
           A smarter surveillance system
         </p>
@@ -30,7 +26,9 @@ const Footer = () => (
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
-                  {link.name}
+                  <a href={link.link} target="_blank" rel="noopener noreferrer">
+                    {link.name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -48,7 +46,7 @@ const Footer = () => (
             className={`w-[21px] h-[21px] object-contain cursor-pointer ${
               index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
             }`}
-            onClick={() => window.open(social.link)}
+            onClick={() => window.open(social.link, "_blank", "noopener,noreferrer")}
           />
         ))}
       </div>
@@ -57,3 +55,4 @@ const Footer = () => (
 );
 
 export default Footer;
+

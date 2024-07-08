@@ -85,7 +85,7 @@ const App = () => (
                   </div>
                 </div>
                 <AboutUs />
-                <Forms /> {/* Add the Forms component here */}
+                {/* <Forms /> Add the Forms component here */}
                 <Footer />
               </div>
             </div>
