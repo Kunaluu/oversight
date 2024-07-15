@@ -1,0 +1,5 @@
+train: C:\Important\Startup\Week 4\face_dataset_600\images\train
+val: C:\Important\Startup\Week 4\face_dataset_600\images\val
+
+nc: 1
+names: ['face']
