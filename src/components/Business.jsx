@@ -133,7 +133,7 @@ const Business = () => {
         <h1 className="text-4xl font-semibold text-white mt-12 mb-16 text-center">
           What we do, and how it works
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
           {/* Idea */}
           <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
             <h2 className="text-3xl font-semibold text-white">Plan</h2>
@@ -163,7 +163,7 @@ const Business = () => {
           </div>
 
           {/* Example */}
-          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
+          {/* <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
             <h2 className="text-3xl font-semibold text-white">Demo</h2>
             <p className="text-white mt-6 text-center">
               Check out our face recognition model: the first demo runs in
@@ -184,7 +184,7 @@ const Business = () => {
                 Your browser does not support the video tag.
               </video>
             </div>
-          </div>
+          </div> */}
 
           {/* App */}
           <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
