@@ -50,7 +50,7 @@ import product5Image from "../assets/product5.jpg";
 const Plan = () => {
   return (
     <section id="demo">
-      <div className="flex flex-col items-center justify-center bg-customGreen p-16">
+      <div className="flex flex-col items-center justify-center bg-customGreen p-20">
         <h1 className="text-5xl font-semibold text-white mt-8 mb-16">
           Our Product
         </h1>

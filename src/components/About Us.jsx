@@ -47,7 +47,7 @@ import person2Image from "../assets/michelle.jpg";
 const AboutUs = () => {
   return (
     <section id="about">
-      <div className="flex flex-col items-center justify-center bg-customBlue p-16">
+      <div className="flex flex-col items-center justify-center bg-customBlue p-20">
         <h1 className="text-5xl font-semibold text-white mt-8 mb-16">
           This is us
         </h1>
