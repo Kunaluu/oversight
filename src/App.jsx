@@ -51,6 +51,7 @@
 import styles from "./style";
 import { Business, Footer, Navbar, Hero } from "./components";
 import AboutUs from "./components/About Us";
+import Plan from "./components/Plan";
 import Forms from "./components/Forms";
 import { Analytics } from "@vercel/analytics/react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -76,6 +77,7 @@ const App = () => (
         
             <div className={`bg-primary ${styles.paddingPageX} ${styles.flexCenter}`}>
               <div className={`${styles.boxWidth}`}>
+              <Plan />
                 <div className="app-container">
                   <div className="app-container flex flex-col items-center justify-center min-h-screen">
                     {/* Video options box */}
