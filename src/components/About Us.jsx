@@ -62,7 +62,7 @@ const AboutUs = () => {
             <h2 className="text-3xl font-semibold text-white mt-4">
               Kunal Umbrani
             </h2>
-            <p className="text-white mt-3 text-center">
+            <p className="text-white mt-5 text-center">
               Hey, I'm Kunal, a Computer Science graduate with a profound
               fascination for the potential of Machine Learning and Generative
               AI. Every new project and discovery drives me to delve deeper into
@@ -81,7 +81,7 @@ const AboutUs = () => {
             <h2 className="text-3xl font-semibold text-white mt-4">
               Michelle Dsouza
             </h2>
-            <p className="text-white mt-3 text-center">
+            <p className="text-white mt-5 text-center">
               Hi, I'm Michelle. I'm a Computer Science graduate immersed in
               Artificial Intelligence and 3D Animation. My focus lies on
               leveraging automation and AI to build innovative approaches. I
