@@ -57,7 +57,7 @@ const Plan = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 w-full max-w-7xl">
 
           {/* Feature 1 */}
-          <div className="flex flex-col items-center p-6">
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
             <img
               src={product1Image}
               alt="Kunal Umbrani"
@@ -73,7 +73,7 @@ const Plan = () => {
           </div>
 
           {/* Feature 2 */}
-          <div className="flex flex-col items-center p-6">
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
             <img
               src={product2Image}
               alt="Michelle Dsouza"
@@ -89,7 +89,7 @@ const Plan = () => {
           </div>
 
           {/* Feature 3 */}
-          <div className="flex flex-col items-center p-6">
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
             <img
               src={product3Image}
               alt="Michelle Dsouza"
@@ -105,7 +105,7 @@ const Plan = () => {
           </div>
 
           {/* Feature 4 */}
-          <div className="flex flex-col items-center p-6">
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
             <img
               src={product4Image}
               alt="Michelle Dsouza"
@@ -120,7 +120,7 @@ const Plan = () => {
           </div>
 
           {/* Feature 5 */}
-          <div className="flex flex-col items-center p-6">
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
             <img
               src={product5Image}
               alt="Michelle Dsouza"
