@@ -229,8 +229,8 @@ const Business = () => {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
           {/* Person 1 */}
-          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent mr-10">
-            <img src={Image} alt="Privacy" className="object-cover mb-4" />
+          <div className="flex flex-col items-center p-12 rounded-lg shadow-md bg-transparent mr-10">
+            <img src={Image} alt="Privacy" className="object-cover mb-10" />
           </div>
           {/* Person 2 */}
           <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
