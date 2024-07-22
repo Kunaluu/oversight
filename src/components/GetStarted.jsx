@@ -33,7 +33,7 @@ const GetStarted = () => {
         className={`${styles.flexCenter} w-[90vw] max-w-[550px] h-[50px] bg-blue-gradient p-[2px] cursor-pointer`}
       >
         <div
-          className={`${styles.flexCenter} flex-col bg-primary w-full h-full`}
+          className={`${styles.flexCenter} flex-col bg-customGrey w-full h-full`}
         >
           <div className={`${styles.flexStart} flex-row`}>
             <p className="font-poppins font-medium text-[14px] leading-[23.4px]">
@@ -55,7 +55,7 @@ const GetStarted = () => {
         className={`${styles.flexCenter} w-[90vw] max-w-[550px] h-[50px] bg-blue-gradient p-[2px] cursor-pointer`}
       >
         <div
-          className={`${styles.flexCenter} flex-col bg-primary w-full h-full`}
+          className={`${styles.flexCenter} flex-col bg-customGrey w-full h-full`}
         >
           <div className={`${styles.flexStart} flex-row`}>
             <p className="font-poppins font-medium text-[14px] leading-[23.4px]">

@@ -51,7 +51,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-start justify-between min-h-screen py-20 px-6 md:px-16 lg:px-24 bg-black text-white"
+      className="flex flex-col md:flex-row items-start justify-between min-h-screen py-20 px-6 md:px-16 lg:px-24 bg-customGrey text-white"
     >
       {/* Left Column: Text */}
       <div className="flex-1 flex flex-col items-start text-left">
