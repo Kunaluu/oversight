@@ -1,5 +1,6 @@
 // import { features } from "../constants";
 import React, { useState, useEffect, useRef } from "react";
+import Image from "../assets/waitlist.svg";
 
 // const Business = () => {
 //   const [videoSrc, setVideoSrc] = useState('');
@@ -126,91 +127,128 @@ import React, { useState, useEffect, useRef } from "react";
 //   );
 // }
 
+// const Business = () => {
+// return (
+//   <section id="demo">
+//     <div className="flex flex-col items-center justify-center bg-primary p-4">
+//       <h1 className="text-4xl font-semibold text-white mt-12 mb-16 text-center">
+//         What we do, and how it works
+//       </h1>
+//       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
+//         {/* Idea */}
+//         <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
+//           <h2 className="text-3xl font-semibold text-white">Plan</h2>
+//           <p className="text-white mt-6 text-center">
+//             We are developing an advanced surveillance system that uses AI for
+//             motion and facial recognition. Key features include:
+//           </p>
+//           <p className="text-white mt-3 text-center">
+//             Automatic Flagging: Faces are categorized as Green (trusted),
+//             Orange (regular visitors), or Red (strangers) based on visit
+//             frequency.
+//           </p>
+//           <p className="text-white mt-3 text-center">
+//             Manual Adjustment: Users can manually set flags for individuals.
+//           </p>
+//           <p className="text-white mt-3 text-center">
+//             Motion Detection: Prolonged motion without facial recognition (eg.
+//             use of masks) is flagged as suspicious.
+//           </p>
+//           <p className="text-white mt-3 text-center">
+//             Instant Alerts: Suspicious activity triggers immediate alerts.
+//           </p>
+//           <p className="text-white mt-3 text-center">
+//             Visitor Statistics: A dashboard provides visitor data with weekly
+//             and monthly summaries.
+//           </p>
+//         </div>
+
+//         {/* Example */}
+//         {/* <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
+//           <h2 className="text-3xl font-semibold text-white">Demo</h2>
+//           <p className="text-white mt-6 text-center">
+//             Check out our face recognition model: the first demo runs in
+//             real-time, while the second one processes a prerecorded video.
+//           </p>
+//           <div
+//             className="relative mt-6 w-full"
+//             style={{ paddingBottom: "95%" }}
+//           >
+//             <video
+//               className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+//               controls
+//               controlsList="nodownload noremoteplayback noplaybackrate nofullscreen"
+//               disablePictureInPicture
+//               poster="/thumbnail.png" // Thumbnail image
+//             >
+//               <source src="/vid1.mp4" type="video/mp4" />
+//               Your browser does not support the video tag.
+//             </video>
+//           </div>
+//         </div> */}
+
+//         {/* App */}
+//         <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
+//           <h2 className="text-3xl font-semibold text-white">
+//             Why a waitlist?
+//           </h2>
+//           <p className="text-white mt-6 text-center">
+//             Your privacy and security is our top priority
+//           </p>
+//           <p className="text-white mt-3 text-center">
+//             To accurately recognize a face as a green flag, our model needs
+//             detailed data. This requires capturing several hundred frames of
+//             your face in a 10-second video. While essential for model
+//             accuracy, we understand this might be uncomfortable, especially in
+//             our early development stage.
+//           </p>
+//           <p className="text-white mt-3 text-center">
+//             To address this, we are developing an app that you can download.
+//             You'll record your face using the app, and all data will remain on
+//             your device. The model will then train on this data locally,
+//             ensuring accurate recognition without sharing your information
+//             with us.
+//           </p>
+//           <p className="text-white mt-3 text-center">
+//             If interested, please join our waitlist for early access to the
+//             app upon release.
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   </section>
+// );
+// };
+
 const Business = () => {
   return (
     <section id="demo">
       <div className="flex flex-col items-center justify-center bg-primary p-4">
-        <h1 className="text-4xl font-semibold text-white mt-12 mb-16 text-center">
-          What we do, and how it works
+        <h1 className="text-5xl font-semibold text-white mt-16 mb-20">
+          Why join the waitlist?
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
-          {/* Idea */}
-          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
-            <h2 className="text-3xl font-semibold text-white">Plan</h2>
-            <p className="text-white mt-6 text-center">
-              We are developing an advanced surveillance system that uses AI for
-              motion and facial recognition. Key features include:
-            </p>
-            <p className="text-white mt-3 text-center">
-              Automatic Flagging: Faces are categorized as Green (trusted),
-              Orange (regular visitors), or Red (strangers) based on visit
-              frequency.
-            </p>
-            <p className="text-white mt-3 text-center">
-              Manual Adjustment: Users can manually set flags for individuals.
-            </p>
-            <p className="text-white mt-3 text-center">
-              Motion Detection: Prolonged motion without facial recognition (eg.
-              use of masks) is flagged as suspicious.
-            </p>
-            <p className="text-white mt-3 text-center">
-              Instant Alerts: Suspicious activity triggers immediate alerts.
-            </p>
-            <p className="text-white mt-3 text-center">
-              Visitor Statistics: A dashboard provides visitor data with weekly
-              and monthly summaries.
-            </p>
+          {/* Person 1 */}
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent mr-10">
+            <img src={Image} alt="Privacy" className="object-cover mb-4" />
           </div>
-
-          {/* Example */}
-          {/* <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
-            <h2 className="text-3xl font-semibold text-white">Demo</h2>
-            <p className="text-white mt-6 text-center">
-              Check out our face recognition model: the first demo runs in
-              real-time, while the second one processes a prerecorded video.
-            </p>
-            <div
-              className="relative mt-6 w-full"
-              style={{ paddingBottom: "95%" }}
-            >
-              <video
-                className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
-                controls
-                controlsList="nodownload noremoteplayback noplaybackrate nofullscreen"
-                disablePictureInPicture
-                poster="/thumbnail.png" // Thumbnail image
-              >
-                <source src="/vid1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div> */}
-
-          {/* App */}
-          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent border border-white">
-            <h2 className="text-3xl font-semibold text-white">
-              Why a waitlist?
+          {/* Person 2 */}
+          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
+            <h2 className="text-2xl font-semibold text-white mt-5">
+              Your privacy is our top priority
             </h2>
-            <p className="text-white mt-6 text-center">
-              Your privacy and security is our top priority
-            </p>
-            <p className="text-white mt-3 text-center">
-              To accurately recognize a face as a green flag, our model needs
+            <p className="text-white mt-10 text-center">
+              To recognize a face as a green flag accurately, our model needs
               detailed data. This requires capturing several hundred frames of
-              your face in a 10-second video. While essential for model
-              accuracy, we understand this might be uncomfortable, especially in
-              our early development stage.
-            </p>
-            <p className="text-white mt-3 text-center">
-              To address this, we are developing an app that you can download.
-              You'll record your face using the app, and all data will remain on
-              your device. The model will then train on this data locally,
-              ensuring accurate recognition without sharing your information
-              with us.
-            </p>
-            <p className="text-white mt-3 text-center">
-              If interested, please join our waitlist for early access to the
-              app upon release.
+              your face in a 10-second video. <br></br>
+              <br></br>We understand this might be uncomfortable, especially
+              during our early development. Hence we are developing an app for
+              you to download and record your face. All data will remain on your
+              device, ensuring privacy. The model will train locally on your
+              device without sharing your information with us.
+              <h2 className="font-semibold text-white mt-10">
+                Join our waitlist for early access to the app upon release
+              </h2>
             </p>
           </div>
         </div>
