@@ -223,8 +223,8 @@ import Image from "../assets/waitlist.svg";
 const Business = () => {
   return (
     <section id="waitlist">
-      <div className="flex flex-col items-center justify-center bg-primary p-4">
-        <h1 className="text-5xl font-semibold text-white mt-16 mb-20">
+      <div className="flex flex-col items-center justify-center bg-primary p-16">
+        <h1 className="text-5xl font-semibold text-white mt-8 mb-16">
           Why join the waitlist?
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">

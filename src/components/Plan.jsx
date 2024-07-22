@@ -50,14 +50,14 @@ import product5Image from "../assets/product5.jpg";
 const Plan = () => {
   return (
     <section id="demo">
-      <div className="flex flex-col items-center justify-center bg-primary p-4">
-        <h1 className="text-5xl font-semibold text-white mt-20 mb-16">
+      <div className="flex flex-col items-center justify-center bg-customGreen p-16">
+        <h1 className="text-5xl font-semibold text-white mt-8 mb-16">
           Our Product
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 w-full max-w-7xl">
 
           {/* Feature 1 */}
-          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
+          <div className="flex flex-col items-center p-6">
             <img
               src={product1Image}
               alt="Kunal Umbrani"
@@ -73,7 +73,7 @@ const Plan = () => {
           </div>
 
           {/* Feature 2 */}
-          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
+          <div className="flex flex-col items-center p-6">
             <img
               src={product2Image}
               alt="Michelle Dsouza"
@@ -89,7 +89,7 @@ const Plan = () => {
           </div>
 
           {/* Feature 3 */}
-          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
+          <div className="flex flex-col items-center p-6">
             <img
               src={product3Image}
               alt="Michelle Dsouza"
@@ -105,7 +105,7 @@ const Plan = () => {
           </div>
 
           {/* Feature 4 */}
-          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
+          <div className="flex flex-col items-center p-6">
             <img
               src={product4Image}
               alt="Michelle Dsouza"
@@ -120,7 +120,7 @@ const Plan = () => {
           </div>
 
           {/* Feature 5 */}
-          <div className="flex flex-col items-center p-6 rounded-lg shadow-md bg-transparent">
+          <div className="flex flex-col items-center p-6">
             <img
               src={product5Image}
               alt="Michelle Dsouza"
